@@ -1,0 +1,20 @@
+#Specify ids. These are the three ocean-type biomes for pre 1.13 versions of Minecraft. In the latest versions, more ocean-tyoe biomes have been added. Here is a biome id list for pre 1.13 versions: https://minecraft.fandom.com/wiki/Biome/IDs_before_1.13. Here is the one for 1.13+ versions: https://minecraft.fandom.com/wiki/Biome/ID
+ocean = forBiomes(0)
+frozenOcean = forBiomes(10)
+deepOcean = forBiomes(24)
+
+#Add oceans to all types of climates so other stuff doesn't appear as often. You can tweak around the weights for the ocean biomes. The weight of a Minecraft biome is usually 10. 800 will make the world almost all water (land in the form of islands that vary in size)
+ocean.addToGeneration("WARM", 800)
+ocean.addToGeneration("COOL", 800)
+ocean.addToGeneration("DESERT", 800)
+ocean.addToGeneration("ICY", 800)
+deepOcean.addToGeneration("WARM", 800)
+deepOcean.addToGeneration("COOL", 800)
+deepOcean.addToGeneration("DESERT", 800)
+deepOcean.addToGeneration("ICY", 800
+
+#Repeat for frozenOcean, not as often tho (since its just a plain layer of ice)
+frozenOcean.addToGeneration("WARM", 100)
+frozenOcean.addToGeneration("COOL", 100)
+frozenOcean.addToGeneration("DESERT", 100)
+frozenOcean.addToGeneration("ICY", 100)
